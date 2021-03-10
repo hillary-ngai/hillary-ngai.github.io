@@ -18,9 +18,9 @@ and a medical dialogue system for automatic diagnosis.
 
 ### 5 Random Facts About Me
 
-1. I eat majority plant-based and love trying out new restaurants.
+1. I am vegetarian and love trying out new restaurants.
 2. I enjoy hiking, yoga, and jogging.
-3. I was born and raised in Toronto Area, Canada.
+3. I worked in Silicon Valley as a data scientist.
 4. My favourite places to visit include Tokyo, Seoul, Hong Kong, San Francisco, Los Angeles, Montreal, and Vancouver.
 5. I enjoy reading self-help and psychology books.
 ### Connect
