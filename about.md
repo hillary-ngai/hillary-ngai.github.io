@@ -21,9 +21,8 @@ and a medical dialogue system for automatic diagnosis.
 1. I eat majority plant-based and love trying out new restaurants.
 2. I enjoy hiking, yoga, and jogging.
 3. I was born and raised in Toronto Area, Canada.
-4. My favourite places to visit include Tokyo, San Francisco, Los Angeles, and Vancouver.
-5. My next travel destinations (once safe to travel) are Spain, Italy, France, England, and Greece.
-
+4. My favourite places to visit include Tokyo, Seoul, Hong Kong, San Francisco, Los Angeles, Montreal, and Vancouver.
+5. I enjoy reading self-help and psychology books.
 ### Connect
 
 [hngai@cs.toronto.edu](mailto:email@domain.com)
