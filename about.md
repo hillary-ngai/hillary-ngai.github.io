@@ -16,13 +16,14 @@ out-of-distribution detection, and reinforcement learning.
 I am currently developing a visualization tool for out-of-distribution detection and analysis
 and a medical dialogue system for automatic diagnosis.
 
-### 5 Random Facts About Me
+### 6 Random Facts About Me
 
 1. I am vegetarian and love trying out new restaurants.
 2. I enjoy hiking, yoga, and jogging.
 3. I worked in Silicon Valley as a data scientist.
 4. My favourite places to visit include Tokyo, Seoul, Hong Kong, San Francisco, Los Angeles, Montreal, and Vancouver.
 5. I enjoy reading self-help and psychology books.
+6. One of my favourite quarantine hobbies is playing chess and board games with friends.
 ### Connect
 
 [hngai@cs.toronto.edu](mailto:email@domain.com)
