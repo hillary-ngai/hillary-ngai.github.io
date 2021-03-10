@@ -4,12 +4,26 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi there! Let me introduce myself. 
 
-### More Information
+I am a computer science master's student at the University of Toronto 
+and a machine learning researcher at Vector Institute, 
+supervised by Prof. Frank Rudzicz. 
 
-A place to include any other types of information that you'd like to include about yourself.
+My main research is in natural language processing in healthcare. I am interested in 
+language models, named entity recognition, transfer learning, 
+out-of-distribution detection, and reinforcement learning.
+I am currently developing a visualization tool for out-of-distribution detection and analysis
+and a medical dialogue system for automatic diagnosis.
 
-### Contact me
+### 5 Random Facts About Me
 
-[email@domain.com](mailto:email@domain.com)
+1. I eat majority plant-based and love trying out new restaurants.
+2. I enjoy hiking, yoga, and jogging.
+3. I was born and raised in Toronto Area, Canada.
+4. My favourite places to visit include Tokyo, San Francisco, Los Angeles, and Vancouver.
+5. My next travel destinations (once safe to travel) are Spain, Italy, France, England, and Greece.
+
+### Connect
+
+[hngai@cs.toronto.edu](mailto:email@domain.com)
