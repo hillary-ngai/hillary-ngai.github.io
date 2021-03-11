@@ -3,8 +3,9 @@ layout: post
 title: Understanding Variational Autoencoders
 ---
 
-![VAE Diagram](/Users/hillary/Documents/hillary-ngai.github.io/images/VAE.png)
+![VAE Diagram](../images/VAE.png)
 
+## What are Variational Autoencoders?
 Variational Autoencoders (VAEs) are generative models with an encoder-decoder architecture.
 * VAEs are directed probabilistic graphical models (DPGM) whose posterior is 
 approximated using a neural network.
