@@ -23,6 +23,6 @@ and a medical dialogue system for automatic diagnosis.
 3. I worked in Silicon Valley as a data scientist.
 4. My favourite places to visit include Tokyo, Seoul, Hong Kong, San Francisco, Los Angeles, Montreal, and Vancouver.
 5. I like to play chess and board games with friends.
-### Connect
 
+### Connect
 [hngai@cs.toronto.edu](mailto:email@domain.com)
