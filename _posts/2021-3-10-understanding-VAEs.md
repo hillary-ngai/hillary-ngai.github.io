@@ -33,12 +33,15 @@ maths behind VAEs!
 ### Kullback–Leibler Divergence
 Let's first define the Kullback–Leibler (KL) divergence (also called relative entropy).
 
-For discrete probability distributions P and Q defined on the same probability space, X
-the relative entropy from Q to P is defined to be:
+For discrete probability distributions P and Q defined on the same probability space,
+the KL divergence from Q to P is defined as:
 
-![KL Divergence](../images/KL-divergence.svg)Diagram of a Variational Autoencoder.
+![KL Divergence](../images/KL-divergence.png)
 
+The KL divergence has the following properties:
+1. ![KL Divergence](../images/KL-property-2.png)
 
+2. ![KL Divergence](../images/KL-property-1.png)
 
 
 
