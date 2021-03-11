@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi there! Let me introduce myself. 
+Hi there! 
 
 I am a computer science master's student at the University of Toronto 
 and a machine learning researcher at Vector Institute, 
