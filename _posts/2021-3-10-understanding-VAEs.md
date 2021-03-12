@@ -172,7 +172,20 @@ Therefore, we can conclude that by maximizing the ELBO, we are essentially minim
 You can visualize this by moving the ELBO upwards, closing in on the gap, and decreasing
 the KL divergence.
 
-Now let's rewrite the loss function as such:
+Now let's rewrite the objective function such that 
+it maximizes the ELBO:
+
+![Loss 1](../images/loss-1.png)
+
+![Loss 2](../images/loss-2.png)
+
+![Loss 3](../images/loss-3.png)
+
+![Loss 4](../images/loss-4.png)
+
+![Final ELBO](../images/ELBO-final.png)
+
+
 
 ### Etc.
 VAEs make strong assumptions about the distribution of the latent variables:
