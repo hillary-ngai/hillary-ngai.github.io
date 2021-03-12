@@ -17,8 +17,7 @@ Variational Autoencoders are generative models with an encoder-decoder architect
 Just like a standard autoencoder, VAEs are trained in an unsupervised manner 
 where the reconstruction error between the input x and the 
 reconstructed input x' is minimized. However, in order to introduce some regularization of the latent space, 
-the input is encoded as a distribution over the latent space rather than encoded as a single point. In other words, 
-VAEs represent z as a distribution, rather than a vector.
+the input is encoded as a distribution over the latent space rather than encoded as a single point.
 
 ### Generating New Images
 To generate a random, new sample that is similar to the training data, you can simply remove the encoder
@@ -32,6 +31,8 @@ maths behind VAEs!
 
 ### Kullback–Leibler Divergence
 Let's first define the Kullback–Leibler (KL) divergence (also called relative entropy).
+KL divergence is a measure of how one probability distribution is different from a second, 
+reference probability distribution.
 
 For discrete probability distributions P(x) and Q(x) defined on the same probability space,
 the KL divergence from Q(x) to P(x) is defined as:
@@ -58,12 +59,18 @@ However, p(x) is intractable &mdash; therefore, making the whole term intractabl
 
 ![Intractable Integral](../images/integral.png)
 
-The solution to this issue is to use variational inference to approximate p(z|x) using a tractable distribution 
-q(z|x).
+The solution to this issue is to use variational inference 
+to approximate p(z|x) using a tractable distribution q(z|x).
 
-![Variational Inference](../images/encoder-decoder.png)  The standard VAE directed graphical model.
 
-We can do this by minimizing the 
+![Variational Inference](../images/encoder-decoder.png)  
+The standard VAE directed graphical model.
+
+### Objective Function
+We can do this by minimizing the KL divergence from q(z|x) to p(z|x).
+
+### Optimizing the Variational Lower Bound
+
 
 ### Etc.
 VAEs make strong assumptions about the distribution of the latent variables:
