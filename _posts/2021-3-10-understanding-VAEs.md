@@ -66,9 +66,13 @@ to approximate p(z|x) using a tractable distribution q(z|x).
 The standard VAE directed graphical model.
 
 ### Objective Function
-We can approximate p(z|x) with q(z|x) by minimizing the KL divergence from q(z|x) to p(z|x).
+We can approximate p(z|x) with q(z|x) by minimizing the KL divergence from q(z|x) to p(z|x):
 
 ![Argmin](../images/argmin.png)  
+
+Let's manipulate this equation such that
+we can isolate for p(x) in a single term
+(you'll see why later).
 
 ![KL0](../images/KL-0.png)  
 
@@ -115,7 +119,7 @@ ELBO is defined as the lower bound on the evidence:
 ![ELBO-0](../images/ELBO-0.png) 
 
 The derivation of the ELBO is as follows (for now we will 
-drop the &Theta; in the likelihood function to make things simpler,
+drop the &Theta; in the likelihood function to simplify the math a bit,
 but assume that it's there):
 
 ![ELBO-1](../images/ELBO-1.png)
@@ -129,6 +133,46 @@ since we know that the logarithm function is strictly concave.
 
 ![Jensen-0](../images/jensen-0.png)
 
+Earlier we saw that:
+
+![Jensen-1](../images/jensen-1.png)
+
+Plugging into Jensen's inequality, "f" is the logarithm function 
+and "x" is the term p(z, x) / q(z | x):
+
+![Jensen-2](../images/jensen-2.png)
+
+![Jensen-3](../images/jensen-03.png)
+
+![Jensen-4](../images/jensen-4.png)
+
+Now, we have solved for ELBO. So then what do we do with this? 
+Notice how the KL divergence is the difference between log(p(x)) and ELBO:
+
+![Minimize ELBO](../images/minimize-ELBO.png)
+
+We can visualize this as such:
+
+![ELBO Diagram](../images/ELBO.png)
+
+We know that:
+
+1. ELBO is the lower bound of log(p(x)):
+   
+![Proof 0](../images/proof-0.png)
+
+2. KL divergence must be greater or equal to zero:
+
+![Proof 1](../images/proof-1.png)
+
+3. The objective is to minimize the KL divergence by learning 
+the parameters of the variational distribution q and log(p(x)) does not depend on q. 
+   
+Therefore, we can conclude that by maximizing the ELBO, we are essentially minimizing the KL divergence.
+You can visualize this by moving the ELBO upwards, closing in on the gap, and decreasing
+the KL divergence.
+
+Now let's rewrite the loss function as such:
 
 ### Etc.
 VAEs make strong assumptions about the distribution of the latent variables:
