@@ -149,7 +149,7 @@ and "x" is the term p(z, x) / q(z | x):
 Now, we have solved for ELBO. So then what do we do with this? 
 Notice how the KL divergence is the difference between log(p(x)) and ELBO:
 
-![Minimize ELBO](../images/minimize-ELBO.png)
+![Minimize ELBO](../images/minimize-elbo.png)
 
 We can visualize this as such:
 
