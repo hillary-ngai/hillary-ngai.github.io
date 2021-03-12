@@ -37,7 +37,7 @@ reference probability distribution.
 For discrete probability distributions P(x) and Q(x) defined on the same probability space,
 the KL divergence from Q(x) to P(x) is defined as:
 
-![KL Divergence](../images/KL-divergence.png)
+![KL Divergence](../images/KL-eqn.png)
 
 The KL divergence has the following properties:
 1. ![KL Property 1](../images/KL-property-2.png)
@@ -66,11 +66,20 @@ to approximate p(z|x) using a tractable distribution q(z|x).
 The standard VAE directed graphical model.
 
 ### Objective Function
-We can do this by minimizing the KL divergence from q(z|x) to p(z|x).
+We can approximate p(z|x) with q(z|x) by minimizing the KL divergence from q(z|x) to p(z|x).
 
 ![Argmin](../images/argmin.png)  
 
-![KL1](../images/KL-1.png)  
+![KL0](../images/KL-0.png)  
+
+![KL1](../images/KL-01.png)  
+
+![KL2](../images/KL-2.png)  
+
+Substitute:
+![Bayes Rule](../images/bayes-rule.png)  
+
+![KL3](../images/KL-3.png)  
 
 ### Optimizing the Variational Lower Bound
 
