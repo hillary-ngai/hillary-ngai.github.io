@@ -74,12 +74,23 @@ We can approximate p(z|x) with q(z|x) by minimizing the KL divergence from q(z|x
 
 ![KL1](../images/KL-01.png)  
 
-![KL2](../images/KL-2.png)  
+Substitute p(z|x) using:
+![Bayes Rule](../images/bayes-rule.png) 
 
-Substitute:
-![Bayes Rule](../images/bayes-rule.png)  
+![KL2](../images/KL-2.png)
 
 ![KL3](../images/KL-3.png)  
+
+![KL4](../images/KL-4.png)  
+
+Note that:
+![Log P(x)](../images/log_p(x).png)  
+
+Therefore, 
+![KL5](../images/KL-5.png)  
+
+Rearranging, we get:
+![KL6](../images/KL-rearrange.png)  
 
 ### Optimizing the Variational Lower Bound
 
