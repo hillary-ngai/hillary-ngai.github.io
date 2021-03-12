@@ -185,7 +185,9 @@ it maximizes the ELBO:
 
 ![Final ELBO](../images/ELBO-final.png)
 
+...and you're done! Just kidding, there's more!
 
+Let's analyze what the above equation means.
 
 ### Etc.
 VAEs make strong assumptions about the distribution of the latent variables:
