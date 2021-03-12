@@ -62,12 +62,15 @@ However, p(x) is intractable &mdash; therefore, making the whole term intractabl
 The solution to this issue is to use variational inference 
 to approximate p(z|x) using a tractable distribution q(z|x).
 
-
 ![Variational Inference](../images/encoder-decoder.png)  
 The standard VAE directed graphical model.
 
 ### Objective Function
 We can do this by minimizing the KL divergence from q(z|x) to p(z|x).
+
+![Argmin](../images/argmin.png)  
+
+![KL1](../images/KL-1.png)  
 
 ### Optimizing the Variational Lower Bound
 
