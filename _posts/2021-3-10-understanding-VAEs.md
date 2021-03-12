@@ -97,11 +97,37 @@ Rearranging, we get:
 
 ![KL Rearrange](../images/KL-rearrange.png)  
 
-Since we are optimizing for the parameters of q(z|x)
-and log(p(x)) does not depend on q(z|x) we can treat it as a constant.
+Earlier we saw that p(x) is intractable, so how do we maximize 
+the KL-divergence? We use the Evidence Lower Bound (ELBO)!
 
+### Evidence Lower Bound
+In ELBO, we call the likelihood function evaluated at &Theta; the evidence.
 
-### Optimizing the Variational Lower Bound
+![Evidence](../images/evidence.png) 
+
+The intuition behind why this quantity is called the "evidence"
+is that if we have chosen the right model p and parameters &Theta;, 
+then we should expect to see a high marginal probability of 
+our observed data p(x; &Theta;).
+
+ELBO is defined as the lower bound on the evidence:
+
+![ELBO-0](../images/ELBO-0.png) 
+
+The derivation of the ELBO is as follows (for now we will 
+drop the &Theta; in the likelihood function to make things simpler,
+but assume that it's there):
+
+![ELBO-1](../images/ELBO-1.png)
+
+![ELBO-2](../images/ELBO-02.png)
+
+![ELBO-3](../images/ELBO-03.png)
+
+Now, we can use [Jensen's inequality](ht tps://en.wikipedia.org/wiki/Jensen%27s_inequality)
+since we know that the logarithm function is strictly concave.
+
+![Jensen-0](../images/jensen-0.png)
 
 
 ### Etc.
