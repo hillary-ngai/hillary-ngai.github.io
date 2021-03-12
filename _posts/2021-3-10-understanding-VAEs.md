@@ -33,17 +33,32 @@ maths behind VAEs!
 ### Kullback–Leibler Divergence
 Let's first define the Kullback–Leibler (KL) divergence (also called relative entropy).
 
-For discrete probability distributions P and Q defined on the same probability space,
-the KL divergence from Q to P is defined as:
+For discrete probability distributions P(x) and Q(x) defined on the same probability space,
+the KL divergence from Q(x) to P(x) is defined as:
 
 ![KL Divergence](../images/KL-divergence.png)
 
 The KL divergence has the following properties:
-1. ![KL Divergence](../images/KL-property-2.png)
+1. ![KL Property 1](../images/KL-property-2.png)
 
-2. ![KL Divergence](../images/KL-property-1.png)
+2. ![KL Property 2](../images/KL-property-1.png)
 
+The first property will come in handy for later in the derivation and the proof can be found in 
+[this post](https://stats.stackexchange.com/questions/335197/why-kl-divergence-is-non-negative).
+The second property indicates that KL divergence is not symmetric and therefore, not a distance metric 
+(hence why the term is called a "divergence").
 
+### Variational Inference
+In variational inference, the posterior distribution over a set of unobserved variables 
+{\displaystyle \mathbf {Z} =\{Z_{1}\dots Z_{n}\}}{\mathbf  {Z}}=\{Z_{1}\dots Z_{n}\} 
+given some data {\displaystyle \mathbf {X} }\mathbf {X}  is approximated by a so-called 
+variational distribution, {\displaystyle Q(\mathbf {Z} )}Q({\mathbf  {Z}}):
+
+![Variational Inference](../images/encoder-decoder.png)
+
+![Posterior](../images/posterior.png)
+
+![Intractable Integral](../images/integral.png)
 
 ### Etc.
 VAEs make strong assumptions about the distribution of the latent variables.
