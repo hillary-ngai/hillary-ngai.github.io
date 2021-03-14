@@ -220,15 +220,18 @@ and transforming it to have mean &mu; and variance &sigma;:
 
 ![Normal Distributino 1](../images/normal-dist-1.png)
 
-![Normal Distributino 1](../images/z.png)
+![Z Vector](../images/z.png)
 
 Due to overfitting, the latent space of an autoencoder can be extremely irregular.
 For example, close points in latent space can produce very different decoded data.
 By making the encoder return a distribution over the latent space instead
 of a single point, regularization is introduced. By maximizing the second term, 
 we are minimizing the KL divergence of the variational distribution to the standard
-multivariate Gaussian distribution (centered and reduced). This encourages 
-**continuity** (two close points in the latent space should not give two different contents 
-once decoded) and **completeness** (for a chosen distribution, 
-a point sampled from the latent space should give "meaningful" content
-once decoded). Therefore, **the second term of the ELBO is a regularization term**.
+multivariate Gaussian distribution:
+
+![KL Normal](../images/KL-normal.png)
+
+This encourages points with the same content to cluster 
+together in the latent space. Therefore, **the second term of the ELBO is a regularization term**.
+
+Thanks for reading!
