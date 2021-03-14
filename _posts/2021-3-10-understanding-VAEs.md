@@ -185,11 +185,50 @@ it maximizes the ELBO:
 
 ![Final ELBO](../images/ELBO-final.png)
 
-...and you're done! Just kidding, there's more!
+### Interpretation of ELBO
+So let's try to interpret what the above equation means. 
 
-Let's analyze what the above equation means.
+The first term is the expectation of the log-likelihood 
+of observing x given z. Since there is a deterministic function between z and x',
+the first term can be rewritten as:
 
-### Etc.
-VAEs make strong assumptions about the distribution of the latent variables:
-* the prior is usually set to be the centred isotropic multivariate guassian p(z) = N(0, I)
-* the shape of the variational and the likelihood distributions are also gaussians
+![Reconstruction 0](../images/reconstruction-0.png)
+
+![Reconstruction 1](../images/reconstruction-1.png)
+
+![Reconstruction 2](../images/reconstruction-2.png)
+
+![Reconstruction 3](../images/reconstruction-3.png)
+
+![Reconstruction 4](../images/reconstruction-4.png)
+
+![Reconstruction 5](../images/reconstruction-5.png)
+
+This means that the first term of the ELBO is proportional to the 
+negative squared reconstruction error. **Therefore, by
+maximizing the log-likelihood term, we are essentially 
+minimizing the reconstruction error!**
+
+The second term is the negative KL divergence of the variational 
+distribution q(z|x) to the prior p(z). The prior can be chosen
+and is usually set to be the standard multivariate Gaussian distribution:
+
+![Normal Distribution](../images/normal-dist.png)
+
+The latent vector z can be expressed by sampling from this distribution
+and transforming it to have mean &mu; and variance &sigma;:
+
+![Normal Distributino 1](../images/normal-dist-1.png)
+
+![Normal Distributino 1](../images/z.png)
+
+Due to overfitting, the latent space of an autoencoder can be extremely irregular.
+For example, close points in latent space can produce very different decoded data.
+By making the encoder return a distribution over the latent space instead
+of a single point, regularization is introduced. By maximizing the second term, 
+we are minimizing the KL divergence of the variational distribution to the standard
+multivariate Gaussian distribution (centered and reduced). This encourages 
+**continuity** (two close points in the latent space should not give two different contents 
+once decoded) and **completeness** (for a chosen distribution, 
+a point sampled from the latent space should give "meaningful" content
+once decoded). Therefore, **the second term of the ELBO is a regularization term**.
