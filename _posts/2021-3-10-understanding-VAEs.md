@@ -128,7 +128,7 @@ but assume that it's there):
 
 ![ELBO-3](../images/ELBO-03.png)
 
-Now, we can use [Jensen's inequality](ht tps://en.wikipedia.org/wiki/Jensen%27s_inequality)
+Now, we can use [Jensen's inequality](https://en.wikipedia.org/wiki/Jensen%27s_inequality)
 since we know that the logarithm function is strictly concave.
 
 ![Jensen-0](../images/jensen-0.png)
