@@ -235,3 +235,10 @@ This encourages points with the same content to cluster
 together in the latent space. Therefore, **the second term of the ELBO is a regularization term**.
 
 Thanks for reading!
+
+## Citations
+1. https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73
+2. http://cs229.stanford.edu/notes-spring2019/cs229-notes8-2.pdf
+3. https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence
+4. https://jaan.io/what-is-variational-autoencoder-vae-tutorial/
+5. https://pillowlab.wordpress.com/2019/02/10/reductions-in-representation-learning-with-rate-distortion-theory/ 
